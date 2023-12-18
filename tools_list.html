@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resizable Tab Example</title>
+    <style>
+        div {
+            border: 1px solid #000000;
+        }
+
+        .cate_list, li{
+            margin: 5px;
+        }
+    </style>
+</head>
+<body onload="init()">
+    <div style="display: flex;">
+        <div class="tabs" id="tabs">
+            <ul id="cate_list" style="list-style: none; padding: 3px;margin: 0px;text-align: center;">
+                <li>工具</li>
+                <li>浏览器插件</li>
+            </ul>
+        </div>
+        <div class="main" id="main">
+
+        </div>
+    </div>
+
+    <script>
+        var all_data = undefined;
+        function data2card(name, info) {
+            let html_str = "";
+            console.log(info);
+            return html_str;
+        }
+        function render_main(ele) {
+            let cate_name = ele.innerText;
+            let main_ele = document.getElementById("main");
+            let html_str = "";
+            for (v in all_data[cate_name]) {
+                html_str += data2card(v, all_data[cate_name][v]);
+            }
+            main_ele.innerHTML = html_str;
+        }
+        function render_cate() {
+            if (all_data == undefined)
+                return false;
+            let cate_list = document.getElementById("cate_list");
+            cate_list.innerHTML = ""
+            for (cate in all_data) {
+                console.log(cate);
+                cate_list.innerHTML += ("<li onclick='render_main(this)'>" + cate + "</li>")
+            }
+        }
+        function init() {
+            let xhr = new XMLHttpRequest();
+            xhr.open('GET', 'data.json', true);
+            xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                all_data = JSON.parse(xhr.responseText);
+                render_cate();
+                console.log(all_data);
+            }
+            };
+            xhr.send();
+        }
+    </script>
+</body>
+</html>

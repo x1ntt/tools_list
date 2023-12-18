@@ -1,0 +1,27 @@
+{
+    "工具软件": {
+        "scrcpy": {
+            "introduce": "使用 scrcpy 可以实现电脑手机同屏，MIUI+出来之前的备选项。当然，还有虫洞这个软件也可以实现手机电脑同屏，但是感觉这个开源项目更好一点。",
+            "icon": "",
+            "url": {
+                "项目地址":"https://github.com/Genymobile/scrcpy"
+            }
+        },
+        "Netch": {
+            "introduce": "这个工具是一个代理工具，可以和小飞机配合，实现代理游戏的功能，感觉和sstap很像，但是据说也不太一样。总之，如果需要代理工具的时候，就可以考虑它了。",
+            "icon": "",
+            "url": {
+                "项目地址":"https://github.com/NetchX/Netch"
+            }
+        }
+    },
+    "浏览器插件": {
+        "tampermonkey": {
+            "introduce": "能够在浏览器页面上执行自定义脚本",
+            "icon": "",
+            "url": {
+                "项目地址":"https://chrome.google.com/webstore/detail/gcalenpjmijncebpfijmoaglllgpjagf"
+            }
+        }
+    }
+}
