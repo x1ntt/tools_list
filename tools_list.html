@@ -9,29 +9,61 @@
             border: 1px solid #000000;
         }
 
-        .cate_list, li{
-            margin: 5px;
-        }
+        h3 { margin: 0rem; font-size: 1rem; }
+
+        .cate_list, li{ margin: 0rem; height: 2rem; vertical-align:middle;}
+        .cate_list, li:hover { background-color: #7fcaff; }
+
+        table { margin: 0.3rem;border-collapse: collapse; }
+        table,table tr th, table tr td { border:1px solid #0094ff; padding: 0.3rem; }
+
     </style>
 </head>
 <body onload="init()">
-    <div style="display: flex;">
-        <div class="tabs" id="tabs">
+    <div style="display: flex;width: 80%; margin: auto auto;">
+        <div style="padding: 0rem;width: 10rem;" id="tabs">
             <ul id="cate_list" style="list-style: none; padding: 3px;margin: 0px;text-align: center;">
                 <li>工具</li>
                 <li>浏览器插件</li>
             </ul>
         </div>
-        <div class="main" id="main">
-
+        <div style="width: 100%;" id="main">
+            ~
         </div>
     </div>
 
     <script>
         var all_data = undefined;
         function data2card(name, info) {
-            let html_str = "";
             console.log(info);
+            let url_str = "";
+            let download_str = "";
+            let img_str = `<svg t="1702872247309" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1642" width="80" height="80"><path d="M831.7 369.4H193.6L64 602v290.3h897.2V602L831.7 369.4zM626.6 604.6c0 62.9-51 113.9-114 113.9s-114-51-114-113.9H117.5l103.8-198h582.5l103.8 198h-281zM502.2 131h39.1v140.6h-39.1zM236.855 200.802l27.647-27.647 99.419 99.418-27.648 27.648zM667.547 272.637l99.418-99.419 27.648 27.648-99.418 99.418z" p-id="1643" fill="#515151"></path></svg>`;;
+            if (info.icon != "") {
+                img_str = `<img style="width: 80px; height: 80px;" src="${info.icon}">`;
+            }
+            for (let v in info.url) {
+                download_str += `${v}: <a target="_blank" href="${info.url[v]}">${info.url[v]}</a><br>`
+            }
+            let html_str = `
+                <table>
+                    <tr>
+                        <td rowspan="3">${img_str}</td>
+                        <td colspan="2">
+                            <h3>${name}</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>简介: </td>
+                        <td>${info.introduce}</td>
+                    </tr>
+                    <tr>
+                        <td>相关链接: </td>
+                        <td>${download_str}</td>
+                    </tr>
+                </table>
+            `;
+            
             return html_str;
         }
         function render_main(ele) {
