@@ -5,23 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resizable Tab Example</title>
     <style>
-        div {
+        /* div {
             border: 1px solid #000000;
-        }
+        } */
 
         h3 { margin: 0rem; font-size: 1rem; }
 
-        .cate_list, li{ margin: 0rem; height: 2rem; vertical-align:middle;}
-        .cate_list, li:hover { background-color: #7fcaff; }
+        .cate_list, li{ margin: 0rem; height: 2rem; line-height: 2rem;text-align: center;cursor: pointer;transition: background-color 0.3s ease-out;border-radius: 0.2rem;}
+        .cate_list, li:hover { background-color: #e2e2e2; }
 
         table { margin: 0.3rem;border-collapse: collapse; }
-        table,table tr th, table tr td { border:1px solid #0094ff; padding: 0.3rem; }
+        table, table tr th, table tr td { border:1px solid #59b9ff; padding: 0.3rem; }
+        table tr td {font-size: 0.8rem;color: #333333}
+        .main {
+            display: flex;
+            width: 80%; 
+            margin: auto auto;
+            background-color: #FFFFFF;
+            /* border: 1px solid #505050; */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            padding: 0.3rem;
+            min-width: 55rem;
+        }
+
+        a {text-decoration: none;color: #21a3ff;}
+        a:hover {color: #6ac1ff;}
+        a:active { color: gray;}
 
     </style>
 </head>
-<body onload="init()">
-    <div style="display: flex;width: 80%; margin: auto auto;">
-        <div style="padding: 0rem;width: 10rem;" id="tabs">
+<body onload="init()" style="background-color: #f8fcff;">
+    <div class="main">
+        <div style="padding: 0rem;min-width: 9rem;" id="tabs">
             <ul id="cate_list" style="list-style: none; padding: 3px;margin: 0px;text-align: center;">
                 <li>工具</li>
                 <li>浏览器插件</li>
@@ -43,7 +58,7 @@
                 img_str = `<img style="width: 80px; height: 80px;" src="${info.icon}">`;
             }
             for (let v in info.url) {
-                download_str += `${v}: <a target="_blank" href="${info.url[v]}">${info.url[v]}</a><br>`
+                download_str += `<span style="background-color: #ffcd47;border-radius: 0.2rem;padding: 0.1rem;color: #FFFFFF;">${v}:</span> <a target="_blank" href="${info.url[v]}">${info.url[v]}</a><br>`
             }
             let html_str = `
                 <table>
@@ -58,7 +73,7 @@
                         <td>${info.introduce}</td>
                     </tr>
                     <tr>
-                        <td>相关链接: </td>
+                        <td style="min-width: 4rem;">相关链接: </td>
                         <td>${download_str}</td>
                     </tr>
                 </table>
