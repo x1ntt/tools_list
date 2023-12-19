@@ -50,6 +50,106 @@
                 "下载地址":"https://github.com/microsoft/winget-cli/releases",
                 "应用商店":"ms-windows-store://pdp/?productid=9nblggh4nns1"
             }
+        },
+        "trzsz": {
+            "introduce": "能够实现windows terminal使用rzsz工具的功能，同时也支持termux的rzsz，本质应该是重新实现了rzsz协议，需要服务端和客户端都安装<br>效果挺好的，这样如果是轻度使用ssh，就不需要一个专门的ssh客户端了",
+            "icon": "",
+            "url": {
+                "项目地址":"https://github.com/trzsz/trzsz"
+            }
+        },
+        "HDiffPatch": {
+            "introduce": "用来生成二进制的差异包，甚至直接支持文件夹<br>如果有一个文件夹A或者文件，对他进行了修改，得到文件夹B。那么这个工具就能根据A到B的差异得到一个diff文件C，以实现A+C->B的效果<br>简而言之，就是游戏的差异更新，效果很好（用来差异备份也是可以的）",
+            "icon": "",
+            "url": {
+                "项目地址":"https://github.com/sisong/HDiffPatch"
+            }
+        },
+        "KellectAgent": {
+            "introduce": "能够捕获windows的内核消息，用起来有点像linux的strace，某些情况下很有用",
+            "icon": "",
+            "url": {
+                "项目地址":"https://github.com/acising/KellectAgent-Windows"
+            }
+        },
+        "subconverter网页端": {
+            "introduce": "在各种订阅格式之间进行转换的实用程序.比如ssr转clash",
+            "icon": "",
+            "url": {
+                "项目地址":"https://github.com/CareyWang/sub-web"
+            }
+        },
+        "WindTerm": {
+            "introduce": "一个ssh客户端，虽然看上去功能很多，但是使用过一段时间之后发现偶尔会崩溃，已经好久没更新了（期待更新）",
+            "icon": "",
+            "url": {
+                "项目地址":"https://github.com/kingToolbox/WindTerm"
+            }
+        },
+        "ultimate-cube": {
+            "introduce": "也是一个ssh客户端，看上去不错，但是我还没用",
+            "icon": "",
+            "url": {
+                "项目地址":"https://github.com/G3G4X5X6/ultimate-cube"
+            }
+        },
+        "reptyr": {
+            "introduce": "如果在ssh客户端上面执行了一个命令，但是它出人意料的执行了很久，并且你也不知道它什么时候结束，那么就能通过它把当前的这个会话转移走（比如tmux?）<br>实际上我没用上过，但是依旧贴出来了",
+            "icon": "",
+            "url": {
+                "项目地址":"https://github.com/nelhage/reptyr"
+            }
+        },
+        "nps": {
+            "introduce": "内网穿透工具，还可以做代理隧道",
+            "icon": "",
+            "url": {
+                "项目地址":"https://github.com/ehang-io/nps"
+            }
+        },
+        "frp": {
+            "introduce": "也是一个内网穿透，一般来说更推荐上面的，因为有一个webui更方便，不需要修改被控端，这个似乎只能改配置文件",
+            "icon": "",
+            "url": {
+                "项目地址":"https://github.com/fatedier/frp"
+            }
+        },
+        "rustdesk": {
+            "introduce": "号称开源的远程桌面软件，但是并非完全开源，但也完全够用了，完全够用了 ---- 对于个人用户是这样的，用rust写的，使用效果很好，可以自己搭建服务器",
+            "icon": "",
+            "url": {
+                "项目地址":"https://github.com/rustdesk/rustdesk/"
+            }
+        },
+        "rdpwrap": {
+            "introduce": "windows家庭版是不能用RDP控制的，但是这个项目可以补全这个功能",
+            "icon": "",
+            "url": {
+                "项目地址":"https://github.com/stascorp/rdpwrap"
+            }
+        },
+        "tampermonkey": {
+            "introduce": "能够在浏览器页面上执行自定义脚本，有了想象力就什么都有了",
+            "icon": "",
+            "url": {
+                "安装地址":"https://chrome.google.com/webstore/detail/gcalenpjmijncebpfijmoaglllgpjagf",
+                "百度重新排版、去除重定向":"https://greasyfork.org/zh-CN/scripts/14178-ac-baidu-%E9%87%8D%E5%AE%9A%E5%90%91%E4%BC%98%E5%8C%96%E7%99%BE%E5%BA%A6%E6%90%9C%E7%8B%97%E8%B0%B7%E6%AD%8C%E6%90%9C%E7%B4%A2-%E5%8E%BB%E5%B9%BF%E5%91%8A-favicon-%E5%8F%8C%E5%88%97",
+                "PicViewer CE+":"https://greasyfork.org/zh-CN/scripts/24204-picviewer-ce"
+            }
+        },
+        "猫抓": {
+            "introduce": "获取视频连接，并且可以下载视频直链<br>另外通过配置N_m3u8DL-CLI的m3u8dl://协议可以下载m3u8，巨好用，能实现点击即可下载",
+            "icon": "",
+            "url": {
+                "安装地址":"https://chrome.google.com/webstore/detail/jfedfbgedapdagkghmgibemcoggfppbb"
+            }
+        },
+        "FeHelper(前端助手)": {
+            "introduce": "带有一些好用的功能，我比较常用的是json格式化，用来调试http接口很有用",
+            "icon": "",
+            "url": {
+                "安装地址":"https://chrome.google.com/webstore/detail/pkgccpejnmalmdinmhkkfafefagiiiad"
+            }
         }
     },
     "日常软件": {
@@ -87,6 +187,169 @@
             "icon": "",
             "url": {
                 "项目地址":"https://github.com/Molunerfinn/PicGo"
+            }
+        },
+        "nextcloud": {
+            "introduce": "支持自建服务器的的个人网盘，但是实际上不只是一个网盘，功能巨多。各个平台都有客户端，支持文件同步",
+            "icon": "",
+            "url": {
+                "项目地址":"https://github.com/nextcloud/server"
+            }
+        },
+        "httrack": {
+            "introduce": "整站下载工具 可以把整个网站搬下来，用来保存各类开发手册很方便",
+            "icon": "",
+            "url": {
+                "下载地址":"http://www.httrack.com/page/2/"
+            }
+        },
+        "ExplorerPatcher": {
+            "introduce": "win11资源管理器的补丁工具，能够实现<br><ul><li>开始菜单win10化（也能实现类似win8的全屏菜单）</li><li>任务栏win10化（托盘图标也会变成win10的）</li><li>窗口直角</li><li>右键菜单变成win10的样式</li></ul>",
+            "icon": "",
+            "url": {
+                "项目地址":"https://github.com/valinet/ExplorerPatcher"
+            }
+        },
+        "moonlight-qt": {
+            "introduce": "一个串流软件，支持英伟达的Shield或者<a href='https://github.com/LizardByte/Sunshine'>sunshine</a>作为服务端，同时还有安卓客户端",
+            "icon": "",
+            "url": {
+                "项目地址":"https://github.com/moonlight-stream/moonlight-qt"
+            }
+        },
+        "go-cqhttp": {
+            "introduce": "cq协议的go实现，或者说，是QQ机器人",
+            "icon": "",
+            "url": {
+                "项目地址":"https://github.com/Mrs4s/go-cqhttp"
+            }
+        },
+        "pxder": {
+            "introduce": "pixiv作品批量下载工具，挺好用",
+            "icon": "",
+            "url": {
+                "项目地址":"https://github.com/Tsuk1ko/pxder"
+            }
+        },
+        "Squirrel-RIFE": {
+            "introduce": "视频超分补帧软件，放出来免费用的好像只有补帧功能，对于完整功能需要付费这件事，他完全没提，关于这点，给出差评，完全是骗进去了再引导付费（普通版36，专业版328）<br>但他是一个选择",
+            "icon": "",
+            "url": {
+                "项目地址":"https://github.com/Justin62628/Squirrel-RIFE"
+            }
+        },
+        "blind_watermark": {
+            "introduce": "加隐藏水印的工具，看上去很棒",
+            "icon": "",
+            "url": {
+                "项目地址":"https://github.com/guofei9987/blind_watermark"
+            }
+        },
+        "github hosts": {
+            "introduce": "一种访问github的方法，完全合法，可以参考这个脚本https://www.cnblogs.com/cjdty/p/17254733.html",
+            "icon": "",
+            "url": {
+                "项目地址":"https://gitlab.com/ineo6/hosts/-/blob/master/next-hosts"
+            }
+        },
+        "AdBlock": {
+            "introduce": "广告拦截，很赞",
+            "icon": "",
+            "url": {
+                "项目地址":"https://chrome.google.com/webstore/detail/gighmmpiobklfepjocnamgkkbiglidom"
+            }
+        },
+        "Infinity 新标签页 (Pro)": {
+            "introduce": "主要用于替换掉edge默认的首页，其本身只能说看起来还挺好看，但是其附带的各种功能都用不到，我自己也没有用快捷方式访问网站的习惯",
+            "icon": "",
+            "url": {
+                "项目地址":"https://chrome.google.com/webstore/detail/nnnkddnnlpamobajfibfdgfnbcnkgngh"
+            }
+        },
+        "Pixiv工具箱": {
+            "introduce": "如果需要这个功能，那么这就是神器，能够下载pixiv上面的动图，导出成gif或者视频",
+            "icon": "",
+            "url": {
+                "项目地址":"https://chromewebstore.google.com/detail/pixiv%E5%B7%A5%E5%85%B7%E7%AE%B1/ajlcnbbeidbackfknkgknjefhmbngdnj?pli=1"
+            }
+        },
+        "侧边翻译": {
+            "introduce": "翻译页面上选中的文本，不想全屏翻译的时候很好用，不过现在edge的右键菜单也能翻译选中区域了",
+            "icon": "",
+            "url": {
+                "项目地址":"https://chromewebstore.google.com/detail/%E4%BE%A7%E8%BE%B9%E7%BF%BB%E8%AF%91/bocbaocobfecmglnmeaeppambideimao"
+            }
+        },
+        "喵喵折+": {
+            "introduce": "比价工具，很有用<br>但是一般淘宝或者京东登陆前后的价格是不一样的，需要考虑这点",
+            "icon": "",
+            "url": {
+                "项目地址":"https://chromewebstore.google.com/detail/%E4%BE%A7%E8%BE%B9%E7%BF%BB%E8%AF%91/bocbaocobfecmglnmeaeppambideimao"
+            }
+        },
+        "图片助手(ImageAssistant) 批量图片下载器": {
+            "introduce": "另一个神器，能批量下载页面上的图片，并且不只是当前页面，会推理下一页的内容<br>这意味着，可以下载图集或者漫画！",
+            "icon": "",
+            "url": {
+                "项目地址":"https://chrome.google.com/webstore/detail/dbjbempljhcmhlfpfacalomonjpalpko"
+            }
+        },
+        "listen1": {
+            "introduce": "能听各种平台的歌曲，属于是你懂的的那种东西",
+            "icon": "",
+            "url": {
+                "项目地址":"https://github.com/listen1/listen1_chrome_extension"
+            }
+        }
+    },
+    "菜刀和案板":{
+        "菜刀": {
+            "introduce": "🔪",
+            "icon": "",
+            "url": {
+                "项目地址":"https://github.com/raddyfiy/caidao-official-version"
+            }
+        },
+        "weevely3": {
+            "introduce": "好像是用来产小马崽的工具",
+            "icon": "",
+            "url": {
+                "项目地址":"https://github.com/epinna/weevely3"
+            }
+        },
+        "x64dbg": {
+            "introduce": "大名鼎鼎的OD后继者，是个调试器",
+            "icon": "",
+            "url": {
+                "项目地址":"https://github.com/x64dbg/x64dbg"
+            }
+        },
+        "Debugtron": {
+            "introduce": "用于调试electron程序，比如typora或者vscode这种，有时候有意外收获<br>虽然qq似乎也是electron程序，但是好像做了什么加密功能？",
+            "icon": "",
+            "url": {
+                "项目地址":"https://github.com/pd4d10/debugtron"
+            }
+        },
+        "StreamDivert": {
+            "introduce": "能够实现对windows上网络流量的重定向，比如原本发送给目标主机A的8080的流量，可以转给主机B（但是我没成功过，能加载驱动但是说环境启动失败 也不知道是怎么回事）<br>基于<a href='https://www.reqrypt.org/windivert.html'>https://www.reqrypt.org/windivert.html</a>这个项目，github上面搜一下这个关键字能找到很多封装",
+            "icon": "",
+            "url": {
+                "项目地址":"https://github.com/jellever/StreamDivert"
+            }
+        },
+        "ratel": {
+            "introduce": "是一个hook框架，简单判断应该是对软件进行重打包注入自己的代码。和太极·阴应该是一样的原理，针对于有签名校验的app很无力啊，如果再加壳。。。但本就是原理上的限制，和项目无关。由此，还是需要root一个真机才行",
+            "icon": "",
+            "url": {
+                "项目地址":"https://github.com/virjarRatel/ratel-core"
+            }
+        },
+        "sanboxie": {
+            "introduce": "沙盒程序，相比于windows沙盒，这个更像是以前的影子系统。本质应该是io重定向，用来分析程序行为应该是个不错的工具",
+            "icon": "",
+            "url": {
+                "项目地址":"https://github.com/sandboxie-plus/Sandboxie"
             }
         }
     }
