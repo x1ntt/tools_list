@@ -351,6 +351,14 @@
             "url": {
                 "项目地址":"https://github.com/sandboxie-plus/Sandboxie"
             }
+        },
+        "imonitor": {
+            "introduce": "提供了对进程、文件、注册表、网络等系统行为的监控。支持扩展和脚本，可以轻易定制和添加更多功能。可以用于病毒分析、软件逆向、入侵检测，EDR等<br>一言蔽之，这就是另一个火绒剑",
+            "icon": "",
+            "url": {
+                "项目地址":"https://trustsing.com/imonitor/",
+                "官网其他项目":"https://trustsing.com/"
+            }
         }
     }
 }
