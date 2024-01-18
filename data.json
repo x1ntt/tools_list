@@ -366,6 +366,20 @@
                 "项目地址":"https://trustsing.com/imonitor/",
                 "官网其他项目":"https://trustsing.com/"
             }
+        },
+        "ecapture": {
+            "introduce": "hook抓包方案，支持 openssl\\libressl\\boringssl\\gnutls\\nspr(nss) 这些加密库 类似于ssl_logger，支持Linux和Android",
+            "icon": "https://raw.githubusercontent.com/gojue/ecapture/master/images/ecapture-logo-400x400.png",
+            "url": {
+                "项目地址":"https://github.com/gojue/ecapture"
+            }
+        },
+        "ssl_logger": {
+            "introduce": "hook抓包方案 Android，基于frida",
+            "icon": "",
+            "url": {
+                "项目地址":"https://github.com/google/ssl_logger"
+            }
         }
     }
 }
