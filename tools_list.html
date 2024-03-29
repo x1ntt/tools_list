@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resizable Tab Example</title>
+    <title>Tools List</title>
     <style>
         /* div {
             border: 1px solid #000000;
@@ -50,7 +50,6 @@
     <script>
         var all_data = undefined;
         function data2card(name, info) {
-            console.log(info);
             let url_str = "";
             let download_str = "";
             let img_str = `<svg t="1702872247309" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1642" width="4rem" height="4rem"><path d="M831.7 369.4H193.6L64 602v290.3h897.2V602L831.7 369.4zM626.6 604.6c0 62.9-51 113.9-114 113.9s-114-51-114-113.9H117.5l103.8-198h582.5l103.8 198h-281zM502.2 131h39.1v140.6h-39.1zM236.855 200.802l27.647-27.647 99.419 99.418-27.648 27.648zM667.547 272.637l99.418-99.419 27.648 27.648-99.418 99.418z" p-id="1643" fill="#515151"></path></svg>`;;
@@ -58,7 +57,13 @@
                 img_str = `<img style="width: 4rem;" src="${info.icon}">`;
             }
             for (let v in info.url) {
-                download_str += `<span style="background-color: #ffcd47;border-radius: 0.2rem;padding: 0.1rem;color: #FFFFFF;">${v}:</span> <a target="_blank" href="${info.url[v]}">${info.url[v]}</a><br>`
+                let sample_url = "";
+                if (info.url[v].length > 80) {
+                    sample_url = (info.url[v].substring(0, 50) + "...");
+                }else {
+                    sample_url = info.url[v];
+                }
+                download_str += `<span style="background-color: #ffcd47;border-radius: 0.2rem;padding: 0.1rem;color: #FFFFFF;">${v}:</span> <a target="_blank" href="${info.url[v]}">${sample_url}</a><br>`
             }
             let html_str = `
                 <table>
