@@ -150,6 +150,14 @@
             "url": {
                 "安装地址":"https://chrome.google.com/webstore/detail/pkgccpejnmalmdinmhkkfafefagiiiad"
             }
+        },
+		"Rufus": {
+            "introduce": "制作启动盘工具 很有用",
+            "icon": "https://rufus.ie/pics/rufus-128.png",
+            "url": {
+                "官网":"https://rufus.ie/zh/",
+				"下载地址": "https://rufus.ie/downloads/"
+            }
         }
     },
     "日常软件": {
